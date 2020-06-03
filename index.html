@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1><i class="fas fa-film"></i><span>Random<b>Movie</b></span><span>Recommendation</span></h1>
+        <div id="nav">
+            <section id="about">
+                <h2>
+                    <span>A</span>
+                    <span>b</span>
+                    <span>o</span>
+                    <span>u</span>
+                    <span>t</span>
+                </h2>
+                <p class="hidden">It's movie night, but you can't decide what to watch? Let this generator help you out.
+                </p>
+            </section>
+            <section id="get">
+                <button form="form">Get Movies</button>
+            </section>
+            <section id="filter">
+                <h2><span>F</span>
+                    <span>i</span>
+                    <span>l</span>
+                    <span>t</span>
+                    <span>e</span>
+                    <span>r</span></h2>
+                <form id="form" class="hidden">
+                    <div>
+                        <label for="year">Year:</label>
+                        <input type="number" id="year" min="1900" max="2020">
+                    </div>
+                    <div id="all-genres">Genre: <br></div>
+
+                    <div>Rating: <br>
+                        <select>
+                            <option value="">Any</option>
+                            <option value="5">Higher than 5</option>
+                            <option value="6">Higher than 6</option>
+                            <option value="7">Higher than 7</option>
+                            <option value="8">Higher than 8</option>
+                            <option value="9">Higher than 9</option>
+                        </select>
+                    </div>
+                    <button>Get Movies</button>
+                </form>
+            </section>
+        </div>
+    </header>
+    <main>
+        <div id="pages"></div>
+        <article></article>
+    </main>
+
+    <footer>
+        <img src="tmdb1.svg" alt="The Movie Database Logo">
+        <p>
+            This product uses the
+            <a href="">TMDb</a>
+            API but is not endorsed or certified by
+            <a href="">TMDb</a>.
+        </p>
+        <p>
+            Background image by
+            <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+                href="https://unsplash.com/@dmjdenise?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+                target="_blank" rel="noopener noreferrer">
+                <span style="display:inline-block;padding:2px 3px">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+                        viewBox="0 0 32 32">
+                        <title>unsplash-logo</title>
+                        <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+                    </svg>
+                </span>
+                <span style="display:inline-block;padding:2px 3px">Denise Jans</span>
+            </a>
+        </p>
+
+
+    </footer>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+    <script src="header.js"></script>
+</body>
+
+</html>
